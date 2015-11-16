@@ -6,7 +6,6 @@ class Product{
 	private String manufactureCountry;
 	private String name;
 	private float weight;
-
 	private boolean isBanned;
 
 	public Product(int price, GregorianCalendar bestUntil, String manufactureCountry, String name, float weight, boolean isBanned){
@@ -16,7 +15,9 @@ class Product{
 		this.name = name;
 		this.weight = weight;
 
-		this.isBanned = isBanned;
+		this.isBanned = true;
+		if(manufactureCountry == "Russia" || manufactureCountry == "Kazakhstan")
+			this.isBanned = false;
 	}
 
 	public boolean isFresh()
