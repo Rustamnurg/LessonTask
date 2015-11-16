@@ -8,7 +8,7 @@ class Product{
 	private float weight;
 	private boolean isBanned;
 
-	public Product(int price, GregorianCalendar bestUntil, String manufactureCountry, String name, float weight, boolean isBanned){
+	public Product(int price, GregorianCalendar bestUntil, String manufactureCountry, String name, float weight){
 		this.price = price;
 		this.bestUntil = bestUntil;
 		this.manufactureCountry = manufactureCountry;
